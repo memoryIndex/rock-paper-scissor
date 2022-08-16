@@ -19,10 +19,12 @@ function playGame(playerSelection, computerSelection){
     computerSelection = computerSelection.toLowerCase();
 
     if (playerSelection === "rock" & computerSelection === "scissor"){
+        console.log("here")
         return ("You won, Rock beats Scissor!")
     }
     
-    else if(playerSelection ==="rock" & computerSelection === "paper"){
+    else if(playerSelection === "rock" & computerSelection === "paper"){
+        console.log("here")
         return ("You lose, Paper beats Rock!")
     }
 
@@ -51,7 +53,6 @@ function game(){
         console.log(result);
 
         let slicedResult = result.slice(0,5);
-        console.log(slicedResult);
         if (slicedResult === "You l"){
             points += 0;
         }
